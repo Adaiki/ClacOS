@@ -1,7 +1,9 @@
 language: c
 sudo: false
 script:
-  - make coverage
+  - gcc -coverage -O0 main.c -o test
+  - ./test
+  - gcov main.c
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
