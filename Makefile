@@ -35,4 +35,4 @@ coverage: $(OBJ) | $(BIN_DIR)
 	gcov $(SRC)
 
 clean:
-	@$(RM) -rv *.gcno *.gcda $(OBJ_DIR) $(BIN_DIR)
+	@$(RM) -rv *.gcno *.gcda *.gcov $(OBJ_DIR) $(BIN_DIR)
